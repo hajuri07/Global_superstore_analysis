@@ -20,7 +20,7 @@ if page == "Dashboard":
    
     df = pd.read_csv("gs_clean.csv")
     st.dataframe(df.sample(10))
-    st.markdown("[To see entire code please visit my GitHub](https://github.com/yourusername)")
+    st.markdown("[To see entire code please visit my GitHub](https://github.com/hajuri07/Global_superstore_analysis.git)")
 
 elif page == "SQL Queries":
     st.title("💻 SQL Queries")
@@ -50,8 +50,9 @@ elif page == "SQL Queries":
 
     st.subheader(selected_query)
     df_result = pd.read_csv(csv_file)
-    st.markdown("[To see entire code please visit my GitHub](https://github.com/yourusername)")
+    st.markdown("[To see entire code please visit my GitHub](https://github.com/hajuri07/Global_superstore_analysis.git)")
     st.dataframe(df_result)
+
 
 
 
