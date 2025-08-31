@@ -7,7 +7,7 @@ page = st.sidebar.selectbox("Choose Page", ["Dashboard", "SQL Queries"])
 if page == "Dashboard":
     st.title("🌎 Global Superstore Dashboard")
     
-    st.markdown("                 [Visit my GitHub](https://github.com/hajuri07/Global_superstore_analysis.git)")
+   
     
     st.subheader("Overview Charts")
     
@@ -20,10 +20,11 @@ if page == "Dashboard":
    
     df = pd.read_csv("gs_clean.csv")
     st.dataframe(df.sample(10))
+    st.markdown("[To see entire code please visit my GitHub](https://github.com/yourusername)")
 
 elif page == "SQL Queries":
     st.title("💻 SQL Queries")
-    st.markdown("[Visit my GitHub](https://github.com/yourusername)")
+   
 
     queries = [
         {"title": "Cohort analysis", 
@@ -49,7 +50,9 @@ elif page == "SQL Queries":
 
     st.subheader(selected_query)
     df_result = pd.read_csv(csv_file)
+    st.markdown("[To see entire code please visit my GitHub](https://github.com/yourusername)")
     st.dataframe(df_result)
+
 
 
 
